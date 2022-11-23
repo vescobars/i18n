@@ -16,6 +16,7 @@ const Job = (props) => {
           other={<FormattedMessage id="millions"/>}
         />  
       </td>
+      
       <td>{props.offer.city}</td>
       <td>
         <FormattedDate
