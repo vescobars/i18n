@@ -31,8 +31,7 @@ const JobsList = () => {
   ]);
 
   //mod style based on language
-  const base_table = "table-"
-  const style_es = useIntl().locale.startsWith("es") || useIntl().locale.includes("es") ? base_table + "light"  : base_table + "dark";
+  const style_es = useIntl().locale.includes("es") ? "table-light"  : "table-dark";
 
   return (
     <div>
