@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useIntl } from "react-intl";
 import Job from "./job";
 
 const JobsList = () => {
@@ -29,10 +30,14 @@ const JobsList = () => {
     },
   ]);
 
+  //mod style based on language
+  const base_table = "table-"
+  const style_es = useIntl().locale.startsWith("es") || useIntl().locale.includes("es") ? base_table + "light"  : base_table + "dark";
+
   return (
     <div>
       <table className="table">
-        <thead className="thead-dark">
+        <thead className={style_es}>
           <tr>
             <th scope="col">#</th>
             <th scope="col">Position</th>
