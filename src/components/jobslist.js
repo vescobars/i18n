@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useIntl } from "react-intl";
+import { FormattedMessage } from "react-intl";
 import Job from "./job";
 
 const JobsList = () => {
@@ -27,6 +28,14 @@ const JobsList = () => {
       salary: 1,
       city: "Cali, Colombia",
       date: "2019-03-28",
+    },
+    {
+      id: "0004",
+      name: "ML Engineer",
+      company: "AirBnb",
+      salary: 15.0,
+      city: "Miami, FL, USA",
+      date: "2019-01-28",
     },
   ]);
 

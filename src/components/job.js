@@ -9,12 +9,12 @@ const Job = (props) => {
       <td>{props.offer.name}</td>
       <td>{props.offer.company}</td>
       <td>
-        {props.offer.salary + "&ensp"}
-        <FormattedPlural>
+        {props.offer.salary + " "}
+        <FormattedPlural
           value={props.offer.salary}
           one={<FormattedMessage id="million"/>}
           other={<FormattedMessage id="millions"/>}
-        </FormattedPlural>  
+        />  
       </td>
       <td>{props.offer.city}</td>
       <td>
